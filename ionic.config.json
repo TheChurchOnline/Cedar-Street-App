@@ -1,0 +1,7 @@
+{
+  "name": "cedar-street-app",
+  "type": "custom",
+  "integrations": {
+    "cordova": {}
+  }
+}

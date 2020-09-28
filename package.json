@@ -1,0 +1,22 @@
+{
+  "name": "cedar-street-app",
+  "version": "1.0.0",
+  "description": "Cedar Street Baptist Church of God",
+  "main": "any",
+  "scripts": {
+    "test": "A"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheChurchOnline/Cedar-Street-App.git"
+  },
+  "keywords": [
+    "cedar-street"
+  ],
+  "author": "The Church Online",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheChurchOnline/Cedar-Street-App/issues"
+  },
+  "homepage": "https://github.com/TheChurchOnline/Cedar-Street-App#readme"
+}
