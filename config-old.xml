@@ -2,8 +2,7 @@
 <!-- config.xml reference: https://cordova.apache.org/docs/en/latest/config_ref/index.html -->
 <widget 
     xmlns="http://www.w3.org/ns/widgets"
-    xmlns:gap="http://phonegap.com/ns/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0"
     id="com.cedarstreet.app"
     version="1.0.0">
    
@@ -11,13 +10,14 @@
    <description><![CDATA[Cedar Street Baptist Church of God]]></description>
    <author href="https://thechurchonline.com/" email="web@thechurchonline.com">The Church Online</author>
 
+    
 
     <edit-config target="CFBundleShortVersionString" file="*-Info.plist"  mode="merge">
         <string>100</string>
     </edit-config>
 
     <preference name="phonegap-version" value="cli-9.0.0" />
-    <preference name="android-targetSdkVersion" value="28" />
+    <preference name="android-targetSdkVersion" value="29" />
     <preference name="android-minSdkVersion" value="19" />
     
     <plugin name="cordova-plugin-statusbar" source="npm" version="2.4.1" />
@@ -27,14 +27,14 @@
     <plugin name="cordova-plugin-dialogs" source="npm" spec="2.0.1" />
     <plugin name="cordova-plugin-file" source="npm" spec="4.3.1" />
     <plugin name="cordova-plugin-file-transfer" source="npm" spec="1.6.1" />
-    <plugin name="cordova-plugin-inappbrowser" source="npm" spec="2.0.1" />
+    <plugin name="cordova-plugin-inappbrowser" spec="https://github.com/kleeb/cordova-plugin-inappbrowser.git" source="git"/>
     <plugin name="cordova-plugin-network-information" source="npm" spec="2.0.1" />
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="5.0.1" />
     <plugin name="cordova-plugin-actionsheet" source="npm" spec="2.3.3" />
     <plugin source="git" spec="https://github.com/litehelpers/Cordova-sqlite-evcore-extbuild-free.git" />
     <plugin name="cordova-plugin-ionic-keyboard" source="npm" spec="2.1.3" />
     <plugin name="cordova-plugin-file-opener2" source="npm" spec="3.0.0" />
-
+    <plugin name="cordova-plugin-ionic-webview" spec="4.1.3" />
     <plugin source="git" spec="https://github.com/nchutchind/cordova-plugin-streaming-media" />
 <plugin name="cordova-plugin-media" spec="3.0.1" />
 
@@ -45,7 +45,8 @@
     <!--ADMOBPLUGINIOS-DONOTREMOVE-->
     <!--ADMOBPLUGINANDROID-DONOTREMOVE-->
     <!--FACEBOOK-DONOTREMOVE-->
-    
+    <resource-file src="FooPluginStrings.xml" target="res/values/FooPluginStrings.xml" />
+    <hook src="scripts/afterPluginInstall.js" type="after_plugin_install" />
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
@@ -74,6 +75,7 @@
     <platform name="ios">
         <preference name="Orientation" value="portrait" />
     </platform>
+
     <preference name="AutoHideSplashScreen" value="false" />
     <preference name="StatusBarOverlaysWebView" value="true"/>
     <preference name="SplashScreenDelay" value="7000" />
@@ -82,7 +84,7 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="webviewbounce" value="false" />
     <preference name="SplashMaintainAspectRatio" value="true" />
-    
+
     <platform name="android">
         <preference name="SplashShowOnlyFirstTime" value="false" />
         <allow-intent href="market:*" />
@@ -155,6 +157,7 @@
     <access origin="*" subdomains="true" />
     <allow-navigation href="*" /><!-- render iframe content, iframe, ajax calls (API and logins) -->
     <!-- https://github.com/phonegap/build/issues/508 -->
+    <allow-intent href="https://*/*"/>
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
