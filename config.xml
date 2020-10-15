@@ -66,6 +66,10 @@
         </feature>
         <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
         <!--<preference name="InterceptRemoteRequests" value="all" />-->
+        <preference name="AllowUntrustedCerts"  value="true" />
+			  <preference name="InterceptRemoteRequests" value="all" />
+			  <preference name="allowFileAccessFromFileURLs" value="true" />
+			  <preference name="allowUniversalAccessFromFileURLs" value="true" />
 				<preference name="NetworkStatus" value="CDVConnection" />
         <preference name="AllowBackForwardNavigationGestures" value="false" /> 
         <preference name="Allow3DTouchLinkPreview" value="false" />
