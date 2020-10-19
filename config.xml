@@ -163,14 +163,7 @@
     <splash src="res/screen/ios/Default@2x~universal~anyany.png" />
     <content src="index.html" />
     <access origin="*" subdomains="true" />
-    <allow-navigation href="*" /><!-- render iframe content, iframe, ajax calls (API and logins) -->
-    <!-- https://github.com/phonegap/build/issues/508 -->
-    <!--<allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
-    <access origin="mailto:*" launch-external="yes" />
-    <access origin="tel:*" launch-external="yes" />-->
+    <allow-navigation href="*" />
     <allow-navigation href="*" />
     <access origin="*" /> 
     <access origin="//*"/> 
