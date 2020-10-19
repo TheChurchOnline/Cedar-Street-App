@@ -71,7 +71,7 @@
         <preference name="allowFileAccessFromFileURLs" value="true" />
         <preference name="allowUniversalAccessFromFileURLs" value="true" />
         <preference name="NetworkStatus" value="CDVConnection" />
-        <preference name="AllowBackForwardNavigationGestures" value="false" /> 
+        <preference name="AllowBackForwardNavigationGestures" value="true" /> 
         <preference name="Allow3DTouchLinkPreview" value="false" />
         <preference name="UseSwiftLanguageVersion" value="4" /> 
         <preference name="SwiftVersion" value="4.2" />
