@@ -133,8 +133,8 @@
     <allow-intent href="geo:*" />
     <access origin="mailto:*" launch-external="yes" />
     <access origin="tel:*" launch-external="yes" />
-    <allow-navigation href="https://www.givelify.com/*" />
-    <allow-navigation href="https://cedarstreet.thechurchonline.com/*" />
-    <allow-navigation href="https://csbcog.org/*" />
+    <allow-navigation href="https://www.givelify.com/*" target="_self"/>
+    <allow-navigation href="https://cedarstreet.thechurchonline.com/*" target="_self"/>
+    <allow-navigation href="https://csbcog.org/*"  target="_self"/>
     
 </widget>
