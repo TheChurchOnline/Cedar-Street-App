@@ -67,10 +67,7 @@
     // Cordova is ready
     //
     function onDeviceReady() {
-         iabRef = window.open('https://cedarstapp.thechurchonline.com/home', '_self', 'location=yes');
-         iabRef.addEventListener('loadstart', iabLoadStart);
-         iabRef.addEventListener('loadstop', iabLoadStop);
-         iabRef.addEventListener('exit', iabClose);
+        window.open = cordova.InAppBrowser.open;
     }
   </script>
   <!-- CUSTOM JS DO NOT DELETE -->
