@@ -82,9 +82,9 @@
     <platform name="ios">
         <preference name="Orientation" value="portrait" />
     </platform>
-    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="AutoHideSplashScreen" value="false" />
     <preference name="StatusBarOverlaysWebView" value="true"/>
-    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenDelay" value="7000" />
     <preference name="keyboardDisplayRequiresUserAction" value="false" />
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="DisallowOverscroll" value="true" />
